@@ -23,13 +23,31 @@
 # four_decimal_points = Decimal('0.53') * Decimal('0.65')
 # print(four_decimal_points)
 
-# With an integer.
-print(Decimal("10.5") + 3) # 13.5
+# # With an integer.
+# print(Decimal("10.5") + 3) # 13.5
 
-# With a float.
-# This will give an error
-# NameError: name 'Decimal' is not defined
-print(Decimal("10.5") + 3.0)
+# # With a float.
+# # This will give an error
+# # NameError: name 'Decimal' is not defined
+# print(Decimal("10.5") + 3.0)
 
-# Instead, just use the Decimal object for float values.
-print(Decimal("10.5") + Decimal("3.0")) # 13.5
+# # Instead, just use the Decimal object for float values.
+# print(Decimal("10.5") + Decimal("3.0")) # 13.5
+
+from datetime import datetime
+
+#creating an object of datetime, obj = datetime(YYYY, MM, DD, HH, MM, SS)
+birthday = datetime(1993, 4, 29, 18, 52, 23)
+
+#print year
+print(birthday.year)
+
+#print month
+print(birthday.month)
+
+#print day
+print(birthday.day)
+
+#print weekday
+#0 for monday, 6 for sunday
+print(birthday.weekday())
