@@ -39,15 +39,25 @@ from datetime import datetime
 #creating an object of datetime, obj = datetime(YYYY, MM, DD, HH, MM, SS)
 birthday = datetime(1993, 4, 29, 18, 52, 23)
 
-#print year
-print(birthday.year)
+# #print year
+# print(birthday.year)
 
-#print month
-print(birthday.month)
+# #print month
+# print(birthday.month)
 
-#print day
-print(birthday.day)
+# #print day
+# print(birthday.day)
 
-#print weekday
-#0 for monday, 6 for sunday
-print(birthday.weekday())
+# #print weekday
+# #0 for monday, 6 for sunday
+# print(birthday.weekday())
+
+#print(datetime.now())
+
+#Get the difference between current time and previous any time
+#only subtraction operation can be performed
+#print(datetime.now() - datetime(2018, 4, 29))
+
+date_converted = datetime.strptime('Jan 15, 2019','%b %d, %Y')
+print(date_converted.month)
+print(date_converted.year)
