@@ -22,4 +22,8 @@ playcounts = [78, 29, 44, 21, 89, 5]
 
 plays = {songs:playcounts for songs, playcounts in zip(songs,playcounts)}
 
+# print(plays)
+
+plays.update({"Respect":{"album 1": "123 time played","album 2":"1231 time played", "album 3":"12311 time played"}})
+
 print(plays)
