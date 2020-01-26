@@ -47,5 +47,11 @@ zodiac_elements = {"water": ["Cancer", "Scorpio", "Pisces"], "fire": ["Aries", "
 key_to_check = "energy"
 
 #check if a key is present or not, will not throw error if not present
-if key_to_check in zodiac_elements:
+# if key_to_check in zodiac_elements:
+#     print(zodiac_elements["energy"])
+
+#Handle the non-exist key in the dictionary using the except block
+try:
     print(zodiac_elements["energy"])
+except KeyError as K:
+    print("Key " +str(K)+ " does not exist in the dictionary")
