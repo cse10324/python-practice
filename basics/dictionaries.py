@@ -98,4 +98,17 @@ print(users)
 #print(lessons)
 # output: dict_keys(['functions', 'syntax', 'control flow', 'loops', 'lists', 'classes', 'dictionaries'])
 
+#get all the keys of a dictionary but not as a list
+# for test_user in user_ids.keys():
+#     print(test_user)
 
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+total_exercises = 0
+
+# get the valuues of the dictionaries and add its sum to the total_exercises
+# for val in num_exercises.values():
+#     total_exercises += val
+    
+# print(total_exercises)
+    
+    
