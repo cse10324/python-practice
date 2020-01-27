@@ -93,7 +93,7 @@ users = sorted(user_ids.keys())
 # Create a variable called lessons and assign it to be all of the keys of the num_exercises list.
 lessons = num_exercises.keys()
 
-print(users)
+#print(users)
 # output: dict_keys(['teraCoder', 'pythonGuy', 'samTheJavaMaam', 'lyleLoop', 'keysmithKeith'])
 #print(lessons)
 # output: dict_keys(['functions', 'syntax', 'control flow', 'loops', 'lists', 'classes', 'dictionaries'])
@@ -110,5 +110,13 @@ total_exercises = 0
 #     total_exercises += val
     
 # print(total_exercises)
+
+pct_women_in_occupation = {"CEO": 28, "Engineering Managers": 9, "Pharmacist": 58, "Physician": 40, "Lawyer": 37, "Aerospace Engineer": 9}
+
+#get and print both the keys and values using .items() method
+# Women make up [value] percent of [key]s.
+for occupation, value in pct_women_in_occupation.items():
+    print("Women make up "+str(value)+" percent of "+occupation)
+
     
     
