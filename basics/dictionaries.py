@@ -88,14 +88,14 @@ user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, 
 num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
 
 # Create a variable called users and assign it to be all of the keys of the user_ids list.
-users = user_ids.keys()
+users = sorted(user_ids.keys())
 
 # Create a variable called lessons and assign it to be all of the keys of the num_exercises list.
 lessons = num_exercises.keys()
 
 print(users)
 # output: dict_keys(['teraCoder', 'pythonGuy', 'samTheJavaMaam', 'lyleLoop', 'keysmithKeith'])
-print(lessons)
+#print(lessons)
 # output: dict_keys(['functions', 'syntax', 'control flow', 'loops', 'lists', 'classes', 'dictionaries'])
 
 
