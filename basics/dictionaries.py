@@ -81,6 +81,21 @@ health_points += available_items.get('mystic bread',0)
 available_items.pop("mystic bread",0)
 
 # Print available_items and health_points.
-print(available_items)
-print(health_points)
+# print(available_items)
+# print(health_points)
+
+user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+
+# Create a variable called users and assign it to be all of the keys of the user_ids list.
+users = user_ids.keys()
+
+# Create a variable called lessons and assign it to be all of the keys of the num_exercises list.
+lessons = num_exercises.keys()
+
+print(users)
+# output: dict_keys(['teraCoder', 'pythonGuy', 'samTheJavaMaam', 'lyleLoop', 'keysmithKeith'])
+print(lessons)
+# output: dict_keys(['functions', 'syntax', 'control flow', 'loops', 'lists', 'classes', 'dictionaries'])
+
 
