@@ -51,7 +51,13 @@ key_to_check = "energy"
 #     print(zodiac_elements["energy"])
 
 #Handle the non-exist key in the dictionary using the except block
-try:
-    print(zodiac_elements["energy"])
-except KeyError as K:
-    print("Key " +str(K)+ " does not exist in the dictionary")
+# try:
+#     print(zodiac_elements["energy"])
+# except KeyError as K:
+#     print("Key " +str(K)+ " does not exist in the dictionary")
+
+user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
+
+#get the value of key without any error, NONE will be received in case of no value found
+tc_id = user_ids.get("teraCoder",100000)
+print(tc_id)
