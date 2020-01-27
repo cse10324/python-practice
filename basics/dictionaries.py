@@ -60,4 +60,27 @@ user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, 
 
 #get the value of key without any error, NONE will be received in case of no value found
 tc_id = user_ids.get("teraCoder",100000)
-print(tc_id)
+#print(tc_id)
+
+available_items = {"health potion": 10, "cake of the cure": 5, "green elixir": 20, "strength sandwich": 25, "stamina grains": 15, "power stew": 30}
+health_points = 20
+
+# You are designing the video game Big Rock Adventure. We have provided a dictionary of items that are in the player’s inventory which add points to their health meter. In one line, add the corresponding value of the key "stamina grains" to the health_points variable and remove the item "stamina grains" from the dictionary. If the key does not exist, add 0 to health_points.
+
+health_points += available_items.get("stamina grains",0)
+available_items.pop("stamina grains",0)
+
+# print(health_points)
+
+# In one line, add the value of "power stew" to health_points and remove the item from the dictionary. If the key does not exist, add 0 to health_points.
+health_points += available_items.get("power stew",0)
+available_items.pop("power stew",0)
+
+# In one line, add the value of "mystic bread" to health_points and remove the item from the dictionary. If the key does not exist, add 0 to health_points.
+health_points += available_items.get('mystic bread',0)
+available_items.pop("mystic bread",0)
+
+# Print available_items and health_points.
+print(available_items)
+print(health_points)
+
