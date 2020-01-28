@@ -60,8 +60,14 @@ class Shouter:
         else:
             print("You sir has just entered a value other than a string")
 
-one_call = Shouter("shout")
-second_call = Shouter("let's hear it out")
-#pass a integer as a parameter now
-third_call = Shouter(4)    #this will not be printed
+# one_call = Shouter("shout")
+# second_call = Shouter("let's hear it out")
+# #pass a integer as a parameter now
+# third_call = Shouter(4)    #this will not be printed
 
+#print the paramter value passed through using .format() method
+class Circle:
+    def __init__(self,diameter):
+        print("New circle with diameter: {}".format(diameter))
+
+teaching_table = Circle(36)
