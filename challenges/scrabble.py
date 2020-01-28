@@ -74,5 +74,13 @@ for player,words in player_to_words.items():
 # update_point_totals() — turn your nested loops into a function that you can call any time a word is played
 # make your letter_to_points dictionary able to handle lowercase inputs as well
 
+def play_word(player,word):
+    try:
+#       add a value to the existing set of values in dictionary
+        player_to_words[player].append(word)
+    except:
+        print("Some error occured in adding player to the player dictionary")
 
+play_word("Prof Reader","BASKETBALL")
 
+print(player_to_words)
