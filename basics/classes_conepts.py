@@ -70,4 +70,27 @@ class Circle:
     def __init__(self,diameter):
         print("New circle with diameter: {}".format(diameter))
 
-teaching_table = Circle(36)
+# teaching_table = Circle(36)
+
+class Area:
+    def __init__(self, radius):
+        area = 2*3.14*radius
+        return area
+
+# __init__ cannot return any value, it can only return none or no value
+# one_call = Area(12) #error: TypeError: __init__() should return None, not 'float'
+
+class FakeDict:
+    pass
+
+fake_dict1 = FakeDict()
+fake_dict2 = FakeDict()
+
+#two instances created for different object of same class having same name "fake_key"
+#can store any data type mostly
+fake_dict1.fake_key = "This Works!!"
+fake_dict2.fake_key = 8
+
+#lets join the string together
+working_string = "{}{}".format(fake_dict1.fake_key, fake_dict2.fake_key)
+print(working_string)
