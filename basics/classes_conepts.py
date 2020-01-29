@@ -102,12 +102,12 @@ class SearchEngineEntity:
         self.url = url
     
     def secure_url(self):
-        return "{prefix}{site}".format(prefix=secure_prefix,site=self.url)
+        return "{prefix}{site}".format(prefix=self.secure_prefix,site=self.url)
     
 codecademy = SearchEngineEntity("www.codecademy.com")
 wikipedia = SearchEngineEntity("www.wikipedia.com")
 
-print(codecademy.secure_url())
-print(wikipedia.secure_url())
+# print(codecademy.secure_url())
+# print(wikipedia.secure_url())
 
 
