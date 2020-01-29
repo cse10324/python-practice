@@ -93,4 +93,21 @@ fake_dict2.fake_key = 8
 
 #lets join the string together
 working_string = "{}{}".format(fake_dict1.fake_key, fake_dict2.fake_key)
-print(working_string)
+
+#print(working_string)
+
+class SearchEngineEntity:
+    secure_prefix = "https://"
+    def __init__(self, url):
+        self.url = url
+    
+    def secure_url(self):
+        return "{prefix}{site}".format(prefix=secure_prefix,site=self.url)
+    
+codecademy = SearchEngineEntity("www.codecademy.com")
+wikipedia = SearchEngineEntity("www.wikipedia.com")
+
+print(codecademy.secure_url())
+print(wikipedia.secure_url())
+
+
