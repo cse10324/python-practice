@@ -122,11 +122,33 @@ class Circle:
         circumference = 2*self.pi*self.radius
         return circumference
     
-medium_pizza = Circle(12)
-teaching_table = Circle(36)
-round_room = Circle(11460)
+# medium_pizza = Circle(12)
+# teaching_table = Circle(36)
+# round_room = Circle(11460)
 
-print(medium_pizza.circumference())
-print(teaching_table.circumference())
-print(round_room.circumference())
+# print(medium_pizza.circumference())
+# print(teaching_table.circumference())
+# print(round_room.circumference())
 
+class Employee():
+    def __init__(self, name):
+        self.name = name
+
+argus = Employee("Argus Filch")
+print(argus)    #class Employee():
+  def __init__(self, name):
+    self.name = name
+
+argus = Employee("Argus Filch")
+# print(argus)
+# prints "<__main__.Employee object at 0x104e88390>"
+
+#INHERITANC EXAMPLE
+class User:
+    is_admin = False
+    def __init__(self,username):
+        self.username = username
+#Admin is a subclass of User
+class Admin(User):
+    is_admin = True
+    
