@@ -144,11 +144,32 @@ argus = Employee("Argus Filch")
 # prints "<__main__.Employee object at 0x104e88390>"
 
 #INHERITANC EXAMPLE
+# class User:
+#     is_admin = False
+#     def __init__(self,username):
+#         self.username = username
+# #Admin is a subclass of User
+# class Admin(User):
+#     is_admin = True
+    
+class Message:
+    def __init__(self, sender, recipient, text):
+        self.sender = sender
+        self.recipient = recipient
+        self.text = text
+        
 class User:
-    is_admin = False
-    def __init__(self,username):
+    def __init__(self, username):
         self.username = username
-#Admin is a subclass of User
+    
+    def edit_message(self, message, new_text):
+        if message.sender == self.username:
+            message.text = new_text
+    
 class Admin(User):
-    is_admin = True
+    def edit_message(self, message, new_text):
+        # here we are overriding the superclass method with new definition for the admin
+        message.text = new_text
+    
+    
     
