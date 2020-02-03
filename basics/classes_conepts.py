@@ -152,24 +152,36 @@ argus = Employee("Argus Filch")
 # class Admin(User):
 #     is_admin = True
     
-class Message:
-    def __init__(self, sender, recipient, text):
-        self.sender = sender
-        self.recipient = recipient
-        self.text = text
+# class Message:
+#     def __init__(self, sender, recipient, text):
+#         self.sender = sender
+#         self.recipient = recipient
+#         self.text = text
         
-class User:
-    def __init__(self, username):
-        self.username = username
+# class User:
+#     def __init__(self, username):
+#         self.username = username
     
-    def edit_message(self, message, new_text):
-        if message.sender == self.username:
-            message.text = new_text
+#     def edit_message(self, message, new_text):
+#         if message.sender == self.username:
+#             message.text = new_text
     
-class Admin(User):
-    def edit_message(self, message, new_text):
-        # here we are overriding the superclass method with new definition for the admin
-        message.text = new_text
+# class Admin(User):
+#     def edit_message(self, message, new_text):
+#         # here we are overriding the superclass method with new definition for the admin
+#         message.text = new_text
     
+#INTERFACE
+#When two classes have the same method names and attributes, we say they implement the same interface. An interface in Python usually refers to the names of the methods and the arguments they take.
+class InsurancePolicy:
+    def __init__(self, price_of_item):
+        self.price_of_insured_item = price_of_item
+        
+class VehicleInsurance(InsurancePolicy):
+    def get_rate(self):
+        return self.price_of_insured_item * .001
     
+class HomeInsurance(InsurancePolicy):
+    def get_rate(self):
+        return self.price_of_insured_item * .00005
     
