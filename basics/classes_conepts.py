@@ -173,15 +173,35 @@ argus = Employee("Argus Filch")
     
 #INTERFACE
 #When two classes have the same method names and attributes, we say they implement the same interface. An interface in Python usually refers to the names of the methods and the arguments they take.
-class InsurancePolicy:
-    def __init__(self, price_of_item):
-        self.price_of_insured_item = price_of_item
+# class InsurancePolicy:
+#     def __init__(self, price_of_item):
+#         self.price_of_insured_item = price_of_item
         
-class VehicleInsurance(InsurancePolicy):
-    def get_rate(self):
-        return self.price_of_insured_item * .001
+# class VehicleInsurance(InsurancePolicy):
+#     def get_rate(self):
+#         return self.price_of_insured_item * .001
     
-class HomeInsurance(InsurancePolicy):
-    def get_rate(self):
-        return self.price_of_insured_item * .00005
+# class HomeInsurance(InsurancePolicy):
+#     def get_rate(self):
+#         return self.price_of_insured_item * .00005
     
+# For an int and an int, + returns an int
+2 + 4 == 6
+
+# For a float and a float, + returns a float
+3.1 + 2.1 == 5.2
+
+# For a string and a string, + returns a string
+"Is this " + "addition?" == "Is this addition?"
+
+# For a list and a list, + returns a list
+[1, 2] + [3, 4] == [1, 2, 3, 4]
+
+# a_list = [1, 18, 32, 12]
+# a_dict = {'value': True}
+# a_string = "Polymorphism is cool!"
+
+# print(len(a_list)) #4
+# print(len(a_dict)) #1
+# print(len(a_string)) #21
+
