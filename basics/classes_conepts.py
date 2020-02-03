@@ -130,16 +130,16 @@ class Circle:
 # print(teaching_table.circumference())
 # print(round_room.circumference())
 
-class Employee():
-    def __init__(self, name):
-        self.name = name
+# class Employee():
+#     def __init__(self, name):
+#         self.name = name
 
-argus = Employee("Argus Filch")
-print(argus)    #class Employee():
-  def __init__(self, name):
-    self.name = name
+# argus = Employee("Argus Filch")
+# print(argus)    #class Employee():
+#   def __init__(self, name):
+#     self.name = name
 
-argus = Employee("Argus Filch")
+# argus = Employee("Argus Filch")
 # print(argus)
 # prints "<__main__.Employee object at 0x104e88390>"
 
@@ -205,3 +205,33 @@ argus = Employee("Argus Filch")
 # print(len(a_dict)) #1
 # print(len(a_string)) #21
 
+# class UserGroup:
+#     def __init__(self, users, permissions):
+#         self.user_list = users
+#         self.permissions = permissions
+    
+#     def __iter__(self):
+#         return iter(self.user_list)
+    
+#     def __len__(self):
+#         return len(self.user_list)
+    
+#     def __contains__(self):
+#         return user in self.user_list
+    
+# class User:
+#     def __init__(self, username):
+#         self.username = username
+
+# diana = User('diana')
+# frank = User('frank')
+# jenn = User('jenn')
+
+# can_edit = UserGroup([diana, frank],{'can_edit_page':True})
+# can_delete = UserGroup([diana, jenn],{'can_delete_page':True})
+
+# # print(len(can_edit))
+
+# for user in can_edit:
+#     print(user.username)
+    
