@@ -22,3 +22,12 @@ dinner_items = {
 
 dinner_menu = Menu('Dinner', dinner_items, 1700, 2300)
 
+kids_items = {
+  'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00
+}
+
+kids_menu = Menu('Kids', kids_items, 1100, 2100)
+
+
+
+
