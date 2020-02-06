@@ -5,6 +5,11 @@ class Menu:
         self.start_time = start_time
         self.end_time = end_time
     
+    #adding representation string to the menu class
+    def __repr__(self):
+        return "{name} menu available from {opening} to {closing}".format(name=self.name,opening=self.start_time,closing=self.end_time)
+    
+    
 brunch_items = {
   'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50
 }
@@ -28,6 +33,4 @@ kids_items = {
 
 kids_menu = Menu('Kids', kids_items, 1100, 2100)
 
-
-
-
+print(brunch_menu)
