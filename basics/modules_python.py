@@ -61,3 +61,6 @@ birthday = datetime(1993, 4, 29, 18, 52, 23)
 date_converted = datetime.strptime('Jan 15, 2019','%b %d, %Y')
 print(date_converted.month)
 print(date_converted.year)
+
+#Print current datetime into the specified format using strftime
+print(datetime.strftime(datetime.now(),'%b %d, %Y'))
