@@ -22,6 +22,21 @@ class Queue:
         else:
             print("Sorry, no more room!")
     
+    #dequeue method for the queue DS
+    def dequeue(self):
+        if self.get_size() > 0:
+            item_to_remove = self.head
+            print(str(item_to_remove.get_value()) + " is served!")
+            if self.get_size() == 1:
+                self.head = None
+                self.tail = None
+            else:
+                self.head = self.head.get_next_node()
+            self.size -= 1
+            return item_to_remove.get_value()
+        else:
+            print("The Queue is totally empty")
+        
     def peek(self):
         if self.size > 0:
             return self.head.get_value()
@@ -33,4 +48,5 @@ class Queue:
     
     def has_space(self):
         return self.size == 0
+    
     
