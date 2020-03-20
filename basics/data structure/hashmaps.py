@@ -3,4 +3,7 @@ class HashMap:
         self.array_size = array_size
         self.array = [None for i in range(array_size)]
     
-    
+    def hash(self,key):
+        key_bytes = key.encode()
+        hash_code = sum(key_bytes)
+        return hash_code
